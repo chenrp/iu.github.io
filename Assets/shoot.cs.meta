@@ -1,10 +1,13 @@
 fileFormatVersion: 2
 guid: 39aab51b1564ff54ba59d1aa69c018f8
-timeCreated: 1503962519
+timeCreated: 1505848730
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - bullet: {fileID: 108608, guid: c804e08ff2a81744d8ec62acff3931b9, type: 2}
+  - bulletSpawn: {fileID: 100000, guid: 9df6319794e9b954c914d33c9b2e6f8c, type: 3}
+  - JackIsBest: {fileID: 113348, guid: 54eb5844754051b40a918a84c33b7c1a, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

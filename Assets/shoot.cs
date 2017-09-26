@@ -2,13 +2,14 @@
 using System.Collections;
 
 public class shoot : MonoBehaviour {
+	public GameObject bullet;
+	public GameObject bulletSpawn;
+	public GameObject JackIsBest;
 
 	// Use this for initialization
 	void Start () {
 	
 	}
-	public GameObject bullet;
-	public GameObject bulletSpawn;
 
 	float countdown = -1;
 	
@@ -19,7 +20,7 @@ public class shoot : MonoBehaviour {
 		{
 			countdown = 0.5f;
 			GameObject obj = (GameObject)Instantiate(bullet, bulletSpawn.transform.position, bulletSpawn.transform.rotation);
-			obj.GetComponent<Rigidbody>().velocity = Vector3.back * 20;
+			obj.GetComponent<Rigidbody>().velocity = obj.transform.forward * 10;
 			Destroy(obj, 5.0f);
 		}
 	}
